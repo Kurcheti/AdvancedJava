@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Student Registration</title>
+		
+		<style type="text/css">
+		  body{
+		  	font-family: Calibri,Helvetica,sans-serif;
+		  	background-color: pink;
+		  }
+		  
+		  .container{
+		  	padding: 50px;
+		  	background-color: lightblue;
+		  	
+		  }
+		  
+		  input[type=text],input[type=email],input[type=password],textarea{
+		   width: 100%;
+		   padding: 15px;
+		   margin: 5px 0 22px 0;
+		   display: inline-block;
+		   border: none;
+		   background-color: #f1f1f1;
+		  }
+		  
+		  /* input[type=text]:focus,input[type=password]:focus{
+		  background-color: orange;
+		  outline: none;
+		  } */
+		  
+		  div{
+		  	padding: 10px 0;
+		  }
+		  
+		  hr{
+		    border: 1px solid #f1f1f1;
+		    margin-bottom: 25px;
+		  }
+		  
+		  .registrationBtn{
+		  	background-color: green;
+		  	color: white;
+		  	padding: 16px 20px;
+		  	margin: 8px 0;
+		  	border: none;
+		  	cursor: pointer;
+		  	width: 100%;
+		  	opacity: 0.9;
+		  }
+		  
+		  .registrationBtn:hover{
+		    opacity: 1;
+		  }
+		  
+		  
+		  
+		  
+		</style>
+	</head>
+	
+	<body>
+		<form action="http://localhost:2023/StudentRegitration/registerStudent" method="get">
+		<div class="container">
+		<center><h1>Student Registration</h1></center>
+		<hr>
+		<label>First Name</label>
+		<input type="text" name="firstName" placeholder="First Name" size="15" required/>
+		
+		<label>Last Name</label>
+		<input type="text" name="lastName" placeholder="Last Name" size="15" required/>
+		
+		<label>Mobile Number</label>
+		<input type="text" name="mobileNumber" placeholder="MobileNumer" size="10" required/>
+		
+		<label>Email ID</label>
+		<input type="email" name="emailId" placeholder="Email Id" size="20" required/>
+		<div>
+		<label>Gender</label><br>
+		<input type="radio" value="Male" name="gender" checked/>Male
+		<input type="radio" value="Female" name="gender" />FeMale
+		<input type="radio" value="Female" name="gender" />Other
+		</div>
+		
+		<div>
+		<label>Course</label>
+		<select name="course">
+			<option>Core Java</option>
+			<option>Oracle</option>
+			<option>Html,CSS,JS</option>
+			<option>AdvancedJava</option>
+			<option>SpringBoot&MicroServices</option>
+		</select>
+		</div>
+		
+		<label>CurrentAddress</label></br>
+		<textarea name="currentAddress" cols="60" rows="5" required></textarea>
+		
+		<label>Password</label>
+		<input type="password" name="password" placeholder="Password"  required/>
+		<button type="submit" class="registrationBtn">Register</button>
+		
+		
+		</div>
+		</form>>
+
+	</body>
+</html>

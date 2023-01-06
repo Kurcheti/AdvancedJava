@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	
+	<!-- Plain Servlet configuration starts -->
+	<servlet>
+		<servlet-name>plain</servlet-name>
+		<servlet-class>com.servlet.mime.PlainServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>plain</servlet-name>
+		<url-pattern>/plainUrl</url-pattern>
+	</servlet-mapping>
+	<!-- Plain Servlet configuration Ends -->
+
+	<!-- HTML Servlet configuration starts -->
+	<servlet>
+		<servlet-name>html</servlet-name>
+		<servlet-class>com.servlet.mime.HtmlServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>html</servlet-name>
+		<url-pattern>/htmlUrl</url-pattern>
+	</servlet-mapping>
+	<!-- HTML Servlet configuration Ends -->
+
+	<!-- Excel Servlet configuration starts -->
+	<servlet>
+		<servlet-name>excel</servlet-name>
+		<servlet-class>com.servlet.mime.ExcelServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>excel</servlet-name>
+		<url-pattern>/excelUrl</url-pattern>
+	</servlet-mapping>
+	<!-- Excel Servlet configuration Ends -->
+
+	<!-- Word Servlet configuration starts -->
+	<servlet>
+		<servlet-name>word</servlet-name>
+		<servlet-class>com.servlet.mime.WordServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>word</servlet-name>
+		<url-pattern>/wordUrl</url-pattern>
+	</servlet-mapping>
+	<!-- Word Servlet configuration Ends -->
+
+	<!-- XML Servlet configuration starts -->
+	<servlet>
+		<servlet-name>xml</servlet-name>
+		<servlet-class>com.servlet.mime.XmlServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>xml</servlet-name>
+		<url-pattern>/xmlUrl</url-pattern>
+	</servlet-mapping>
+	<!-- Word Servlet configuration Ends -->
+</web-app>
